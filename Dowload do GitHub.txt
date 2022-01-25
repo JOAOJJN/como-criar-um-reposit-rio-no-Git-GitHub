@@ -8,7 +8,7 @@ Nos parágrafos abaixo vamos ensinar a maneira mais simples de instalar o Git em
 
 Instalar o GIT no Windows é tão simples como baixar um instalador e executá-lo. Execute os seguintes passos para instalar o GIT no Windows:
 
-Acesse o site oficial e faça o download do instalador do GIT para Windows.
+Acesse o site oficial e faça o download do instalador do GIT para Windows.[https://gitforwindows.org/]()
 Depois de baixado, clique duas vezes no arquivo para iniciar o assistente de instalação. Basta seguir as instruções na tela, clicando em Next. Ao término, clique em Finish para concluir com êxito a instalação.
 
 #INSTALAR O GIT NO MACOS:
@@ -16,7 +16,7 @@ Depois de baixado, clique duas vezes no arquivo para iniciar o assistente de ins
 Existem muitas maneiras de instalar o GIT em um Mac. Inclusive, há uma chance de que o GIT já esteja no seu computador se você tiver o XCode instalado. Execute o seguinte comando no terminal para verificar:
 Se você obtiver uma resposta como git version 2.7.0 (Apple Git-66), então você está com sorte. Caso você não tenha resposta, execute os seguintes passos:
 
-Visite este site e faça o download do instalador mais recente para Mac.
+Visite este site e faça o download do instalador mais recente para Mac.[https://sourceforge.net/projects/git-osx-installer/files/]()
 Siga as instruções na tela e conclua a instalação.
 
 #INSTALAR O GIT NO LINUX:
