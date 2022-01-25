@@ -1,0 +1,32 @@
+#CRIAR/CONFIGURAR/VERIFICAR UM REPOSITÓRIO
+
+Um repositório é o maior bem de qualquer projeto controlado por versão. Para transformar qualquer diretório em um repositório GIT, o simples comando git init <directory> pode ser utilizado. Uma pasta chamada .git também deve começar a existir no diretório em que o comando foi executado.
+Por outro lado, se você já tem um diretório e deseja verificar (clone-lo), você pode usar o comando git clone. Se você estiver tentando verificar um repositório local, use o seguinte comando:
+
+git clone /path/to/local/repository
+﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌
+Se você pretende verificar um repositório armazenado remotamente, use:
+
+git clone user.name@host:/path/to/remote/repository
+﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌
+
+Após a conclusão da criação, você poderá gerenciar seu repositório na mesma seção.
+
+Agora que o repositório está pronto, vamos falar sobre a estrutura que é mantida pelo GIT.
+Cada repositório local consiste em três árvores: o diretório de trabalho que contém os arquivos reais; O índice que desempenha o papel de uma área de teste e o HEAD que é um ponteiro para o último commit feito pelo usuário.Então, é assim que o fluxo de trabalho pode ser explicado: o usuário adiciona um arquivo ou alterações do diretório de trabalho para o índice (a área de teste) e uma vez revistos, o arquivo ou as alterações são finalmente comprometidos com o HEAD.
+
+Alterações ou adições de arquivos propostas são adicionadas ao índice usando o comando add. Para adicionar qualquer arquivo, o comando é:
+
+git add <nome_do_arquivo>
+﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌
+Se você está realmente confiante o suficiente para fazer essas mudanças no HEAD, então você pode usar o comando commit:
+
+git commit –m “Adicionar qualquer mensagem sobre o commit aqui”
+﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌
+Depois de confirmar as alterações (e acreditar que elas estão prontas para serem enviadas para o repositório original), você pode usar o comando push.
+Uma vez que o git push origin master é executado de dentro do diretório de trabalho, as mudanças presentes no HEAD são enviadas para o repositório remoto. No comando acima mencionado, o master pode ser alterado para o nome do branch ao qual você deseja que as alterações sejam comprometidas.
+Se, no entanto, um repositório existente ainda não tiver sido clonado e você pretende estabelecer uma ligação entre o seu repositório e um servidor remoto, execute o seguinte comando:
+
+git remote add origin <servidor>
+﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌
+Nota: Substitua <servidor> pelo endereço do servidor remoto.

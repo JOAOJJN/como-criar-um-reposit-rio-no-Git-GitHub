@@ -1,0 +1,19 @@
+#LOGIN NO GITHUB#
+
+Seu email tem está verificado
+Clique em sua foto de perfil e abra configurações.
+Clique em Developer settings
+Clique em tokens de acesso pessoal.
+Gere um token, clique em Generate new token .
+De um nome para o token.
+Selecione os escopos que contém nome repo.
+Clique em Generate Token.
+Agora copie seu token (Caso precisa do token gerado siga até o passo 4).
+#E AGORA?
+Quando for solicitado seu login e senha do github
+Preencha seu login normalmente
+Preencha a sua senha com token.
+Atualiza seu código constantemente?
+Ao cadastrar seu remote coloque seu usuario:<TOKEN>
+git remote set-url origin https://KevenMarioN:<MYTOKEN>@github.com/AprendendoAprender/ol3-1.gi
+Documento oficial do github : https://docs.github.com/pt/github/authenticating-to-github/creating-a-personal-access-token
